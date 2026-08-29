@@ -5,34 +5,37 @@ class insert_NewArr{
         System.out.println(" in this program create for insert index position array");
 
 
-      int a[]={12,34,56,778};
-      
-      int index=2;
-      int element=120;
-//1
-      int newArray[]=new int[a.length+1];
-// 2
-      for(int i=0; i<index;i++){
+         int a[]={1,2,3,45,6,7};
 
-        newArray[i]=a[i];
-      }
+         int index=3;
+
+         int no=900;
+
+         // Length
+         int newArr[]=new int [a.length+1];
+
+         // Copy
+         for(int i=0; i<index ;i++){
+
+           newArr[i]=a[i];
+
+         }
+ 
+           
+           newArr[index]=no;
+          
+           for(int i=index; i<a.length; i++){
+
+             newArr[i+1]=a[i];
+
+           }
 
 
-             newArray[index]=element;
+         for( int n:newArr){
 
-             for(int i=index; i<a.length ;i++){
+          System.out.print(n+ " ");
+         }
 
-                newArray[i+1]=a[i];
-             }
-      // Iterative  Process
-
-
-      for(int no : newArray){
-
-        System.out.print(no + " ");
-      }
-      
 
     }
-
-}
+  }
