@@ -15,7 +15,7 @@ class insert_NewArr{
          int newArr[]=new int [a.length+1];
 
          // Copy
-         for(int i=0; i<index ;i++){
+         for(int i=0; i<index ;i++){  
 
            newArr[i]=a[i];
 
