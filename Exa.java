@@ -1,40 +1,29 @@
 
 public class Exa{
+ public static void main(String[] args ){
 
-    public static void main(String[] args) {
-        
+ System.out.println("create the window sliding code");
+      
+ int data[]={1,2,3,4,5,6,7,8};
 
-        int a[]={12,33,232,44,55,64};
+ int days=4;
+ int sum=0;
+ for( int i=0 ;i<days ;i++){
+ 
+sum=sum+data[i];
 
+ }
+ System.out.println(sum);
 
-        int index=3;
-        int element=900;
-
-
-        int NewArr[]=new int[a.length+1];
-
-
-        for(int i=0;i<index;i++){
-
-            NewArr[i]=a[i];
-        }
-
-
-        NewArr[index]=element;
-
-        for(int i=index; i<a.length; i++){
-         
-            
-            NewArr[i+1]=a[i];
-
-        }
+    for(int j=1 ;j<data.length-days;j++){
+     
+        sum=sum-data[j-1]+data[j+days-1];
+        System.out.println("last wisited user"+ sum);
 
 
-        for(int no: NewArr){
+    }
+    //System.out.println("last wisited user"+ sum);
 
-            System.out.println(no);
-        }
-
+ }
 
         }
-}
