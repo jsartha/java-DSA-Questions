@@ -1,3 +1,4 @@
+package arrayCode;
 public class DeleteArr {
     
     public static void main(String[] args) {
